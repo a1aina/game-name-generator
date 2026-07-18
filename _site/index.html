@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Generate fantasy character names shaped by race, role, traits, powers, alignment, and personal inspiration.">
+  <meta name="theme-color" content="#10131a">
+  <title>Character Name Forge</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#generator">Skip to generator</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Character Name Forge home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Character Name Forge</span>
+      </a>
+      <p class="header-tagline">A name shaped around the character you already made.</p>
+    </div>
+  </header>
+
+  <main id="generator" class="shell page-grid">
+    <section class="panel form-panel" aria-labelledby="character-heading">
+      <div class="panel-heading">
+        <p class="eyebrow">Step 1</p>
+        <h1 id="character-heading">Describe the character</h1>
+        <p>Every choice is optional. A little detail gives the forge more to work with.</p>
+      </div>
+
+      <form id="character-form">
+        <div class="field-grid">
+          <label class="field">
+            <span class="field-label">Race or creature</span>
+            <select id="race" name="race">
+              <option value="">No Preference</option>
+              <option value="human">Human</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="elf">Elf</option>
+              <option value="orc">Orc</option>
+              <option value="troll">Troll</option>
+              <option value="undead">Undead</option>
+              <option value="erudite">Erudite</option>
+              <option value="fairy">Fairy</option>
+              <option value="catfolk">Cat or Catfolk</option>
+              <option value="goblin">Goblin</option>
+              <option value="dragonborn">Dragonborn</option>
+              <option value="demon">Demon</option>
+              <option value="angelic">Angelic</option>
+              <option value="construct">Construct</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Character role</span>
+            <select id="role" name="role">
+              <option value="">No Preference</option>
+              <option value="tank">Tank</option>
+              <option value="healer">Healer</option>
+              <option value="dps">Damage dealer / DPS</option>
+              <option value="support">Support</option>
+              <option value="buffer">Buffer</option>
+              <option value="debuffer">Debuffer</option>
+              <option value="summoner">Summoner</option>
+              <option value="rogue">Rogue</option>
+              <option value="mage">Mage</option>
+              <option value="ranger">Ranger</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Name style</span>
+            <select id="name-style" name="nameStyle">
+              <option value="">No Preference</option>
+              <option value="masculine">Masculine</option>
+              <option value="feminine">Feminine</option>
+              <option value="neutral">Neutral</option>
+              <option value="other">Other / Unusual</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Affiliation or alignment</span>
+            <select id="alignment" name="alignment">
+              <option value="">No Preference</option>
+              <option value="good">Good</option>
+              <option value="evil">Evil</option>
+              <option value="neutral">Neutral</option>
+              <option value="chaotic">Chaotic</option>
+              <option value="lawful">Lawful</option>
+              <option value="corrupted">Corrupted</option>
+              <option value="redeemed">Redeemed</option>
+              <option value="mercenary">Mercenary</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="choice-group">
+          <legend>Traits <span>Select any that fit</span></legend>
+          <div class="chip-grid" data-chip-group="traits">
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="tall">
+                <span>Tall</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="strong">
+                <span>Strong</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="ugly">
+                <span>Ugly</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="robust">
+                <span>Robust</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="elegant">
+                <span>Elegant</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="ancient">
+                <span>Ancient</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="mysterious">
+                <span>Mysterious</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="brutal">
+                <span>Brutal</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="small">
+                <span>Small</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="quick">
+                <span>Quick</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="wise">
+                <span>Wise</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="dark">
+                <span>Dark</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="noble">
+                <span>Noble</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="traits" value="chaotic">
+                <span>Chaotic</span>
+              </label>
+            
+          </div>
+        </fieldset>
+
+        <fieldset class="choice-group">
+          <legend>Element or power <span>Select any that fit</span></legend>
+          <div class="chip-grid" data-chip-group="elements">
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="earth">
+                <span>Earth</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="air">
+                <span>Air</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="fire">
+                <span>Fire</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="water">
+                <span>Water</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="ice">
+                <span>Ice</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="nature">
+                <span>Nature</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="electric">
+                <span>Electric</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="light">
+                <span>Light</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="shadow">
+                <span>Shadow</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="psychic">
+                <span>Psychic</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="arcane">
+                <span>Arcane</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="poison">
+                <span>Poison</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="metal">
+                <span>Metal</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="blood">
+                <span>Blood</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="time">
+                <span>Time</span>
+              </label>
+            
+              <label class="chip">
+                <input type="checkbox" name="elements" value="spirit">
+                <span>Spirit</span>
+              </label>
+            
+          </div>
+        </fieldset>
+
+        <label class="field inspiration-field">
+          <span class="field-label">Personal inspiration <span class="optional">Optional</span></span>
+          <input id="inspiration" name="inspiration" type="text" maxlength="48" placeholder="Wolf, moon, lost prince, mushroom…" autocomplete="off">
+          <span class="field-help">The forge may borrow its sound, initials, meaning, or mood instead of inserting the exact word.</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="button button-primary" type="submit" id="generate-button">Generate Name</button>
+          <button class="button button-quiet" type="reset" id="reset-button">Clear Choices</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel result-panel" aria-labelledby="result-heading" aria-live="polite">
+      <div class="panel-heading compact-heading">
+        <p class="eyebrow">Step 2</p>
+        <h2 id="result-heading">Your result</h2>
+      </div>
+
+      <div class="result-stage" id="result-stage">
+        <p class="result-kicker" id="result-kicker">The forge is ready.</p>
+        <div class="generated-name" id="generated-name">?</div>
+        <p class="result-note" id="result-note">Choose as much or as little as you like, then generate a name.</p>
+      </div>
+
+      <div class="result-actions" id="result-actions" hidden>
+        <button class="button button-secondary" type="button" id="similar-button">More Like This</button>
+        <button class="button button-secondary" type="button" id="direction-button">New Direction</button>
+        <button class="button button-primary" type="button" id="save-button">Save</button>
+      </div>
+
+      <details class="why-box" id="why-box" hidden>
+        <summary>Why this name?</summary>
+        <p id="why-text"></p>
+      </details>
+    </section>
+
+    <aside class="panel shortlist-panel" aria-labelledby="shortlist-heading">
+      <div class="panel-heading shortlist-heading-row">
+        <div>
+          <p class="eyebrow">Step 3</p>
+          <h2 id="shortlist-heading">Shortlist</h2>
+        </div>
+        <span class="shortlist-count" id="shortlist-count">0</span>
+      </div>
+
+      <div id="shortlist-empty" class="empty-shortlist">
+        Saved names will stay here during this visit.
+      </div>
+      <ol id="shortlist" class="shortlist" aria-live="polite"></ol>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>Built for the moment when the character is finished and the name field is still judging you.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
