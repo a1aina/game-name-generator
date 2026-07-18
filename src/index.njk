@@ -98,39 +98,33 @@
           </label>
         </div>
 
-        <fieldset class="choice-group">
-          <legend>Traits <span>Select any that fit</span></legend>
-          <div class="chip-grid" data-chip-group="traits">
-            {% for trait in [
-              ['tall','Tall'], ['strong','Strong'], ['ugly','Ugly'], ['robust','Robust'],
-              ['elegant','Elegant'], ['ancient','Ancient'], ['mysterious','Mysterious'],
-              ['brutal','Brutal'], ['small','Small'], ['quick','Quick'], ['wise','Wise'],
-              ['dark','Dark'], ['noble','Noble'], ['chaotic','Chaotic']
-            ] %}
-              <label class="chip">
-                <input type="checkbox" name="traits" value="{{ trait[0] }}">
-                <span>{{ trait[1] }}</span>
-              </label>
-            {% endfor %}
-          </div>
-        </fieldset>
+        <div class="field-grid open-field-grid">
+          <label class="field">
+            <span class="field-label">Traits <span class="optional">Optional</span></span>
+            <input
+              id="traits"
+              name="traits"
+              type="text"
+              maxlength="160"
+              placeholder="Tall, strong, scarred, cheerful, elegant…"
+              autocomplete="off"
+            >
+            <span class="field-help">Use any words you like. Separate multiple traits with commas.</span>
+          </label>
 
-        <fieldset class="choice-group">
-          <legend>Element or power <span>Select any that fit</span></legend>
-          <div class="chip-grid" data-chip-group="elements">
-            {% for element in [
-              ['earth','Earth'], ['air','Air'], ['fire','Fire'], ['water','Water'],
-              ['ice','Ice'], ['nature','Nature'], ['electric','Electric'], ['light','Light'],
-              ['shadow','Shadow'], ['psychic','Psychic'], ['arcane','Arcane'], ['poison','Poison'],
-              ['metal','Metal'], ['blood','Blood'], ['time','Time'], ['spirit','Spirit']
-            ] %}
-              <label class="chip">
-                <input type="checkbox" name="elements" value="{{ element[0] }}">
-                <span>{{ element[1] }}</span>
-              </label>
-            {% endfor %}
-          </div>
-        </fieldset>
+          <label class="field">
+            <span class="field-label">Element or power <span class="optional">Optional</span></span>
+            <input
+              id="elements"
+              name="elements"
+              type="text"
+              maxlength="160"
+              placeholder="Fire, ice, shadow, gravity, music…"
+              autocomplete="off"
+            >
+            <span class="field-help">Add one or more powers, themes, materials, or forces, separated by commas.</span>
+          </label>
+        </div>
 
         <label class="field inspiration-field">
           <span class="field-label">Personal inspiration <span class="optional">Optional</span></span>

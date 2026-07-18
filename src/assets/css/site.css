@@ -294,6 +294,10 @@ summary:focus-visible {
   color: var(--accent-strong);
 }
 
+.open-field-grid {
+  margin-top: 1.2rem;
+}
+
 .inspiration-field {
   margin-top: 1.2rem;
 }
